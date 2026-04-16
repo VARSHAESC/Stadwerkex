@@ -140,10 +140,11 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 [data-testid="stSidebar"] {
-    background-color: rgba(30, 41, 59, 0.6) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #0f172a !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+[data-testid="stSidebar"] .stMarkdown p, [data-testid="stSidebar"] label {
+    color: #cbd5e1 !important;
 }
 
 .main-header { font-size: 34px; font-weight: 700; color: #f8fafc; margin-bottom: 5px; }
@@ -151,22 +152,19 @@ html, body, [data-testid="stAppViewContainer"] {
 
 /* KPI Karten */
 .metric-card {
-    background-color: rgba(30, 41, 59, 0.5); 
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background-color: #1e293b; 
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
     text-align: center;
     color: #f8fafc !important;
-    cursor: pointer;
 }
-.metric-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(14, 165, 233, 0.15); border-color: rgba(14, 165, 233, 0.5); }
+.metric-card:hover { transform: translateY(-3px); border-color: #0ea5e9; }
 .metric-value { font-size: 36px; font-weight: 800; color: #f8fafc; }
-.metric-label { font-size: 12px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 5px; }
-.metric-detail { font-size: 10px; color: #64748b; margin-top: 3px; }
+.metric-label { font-size: 12px; font-weight: 600; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 5px; }
+.metric-detail { font-size: 10px; color: #94a3b8; margin-top: 3px; }
 
 /* Seitenleiste für Map/List Split */
 .split-list-container {
@@ -216,9 +214,18 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 /* Small buttons for Chat/Voice controls */
 .stButton button {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
     font-size: 13px !important;
-    padding: 2px 10px !important;
-    min-height: 32px !important;
+    padding: 4px 12px !important;
+    min-height: 36px !important;
+    transition: all 0.2s ease;
+}
+.stButton button:hover {
+    border-color: #0ea5e9 !important;
+    color: #0ea5e9 !important;
+    background-color: #0f172a !important;
 }
 .small-btn-container button {
     font-size: 11px !important;
@@ -464,14 +471,14 @@ div[data-testid="stRadio"] > div { flex-direction: row; gap: 0px; }
 div[data-testid="stRadio"] label {
     padding: 8px 16px;
     border-bottom: 3px solid transparent;
-    color: #64748b;
+    color: #94a3b8;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 0;
     transition: color 0.15s ease;
 }
-div[data-testid="stRadio"] label:hover { color: #0f172a; }
+div[data-testid="stRadio"] label:hover { color: #f8fafc; }
 /* Hide the actual radio circle (the SVG/span Streamlit injects) */
 div[data-testid="stRadio"] label > div:first-child { display: none !important; }
 /* Active tab: dark text + red underline (matching screenshot) */
