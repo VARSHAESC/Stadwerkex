@@ -1,0 +1,36 @@
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Environment Secrets ---
+.env
+.env.template (optional)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- App Specific (Cache & DB) ---
+cache/
+chroma_db/
+chroma.sqlite3
+osrm_data/
+
+# --- Data Files (Large/Sensitive) ---
+# Uncomment if you want to exclude these from Git
+# Hausanschluss_data.xlsx
+# utility_networks.geojson
+# *.bin
+
+# --- Streamlit ---
+.streamlit/
+
+# --- VS Code / OS ---
+.vscode/
+.DS_Store
+Thumbs.db
