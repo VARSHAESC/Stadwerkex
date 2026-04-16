@@ -313,11 +313,13 @@ def check_auth(user, pwd):
 # ─────────────── Login ───────────────────────────────────────────────
 if not st.session_state.authenticated:
     st.markdown('<h1 style="color:#0f172a; text-align:center; margin-top:100px; white-space: nowrap;">🏢 STADTWERKE X</h1><p style="text-align:center; color:#64748b;">Plattform für Infrastruktur-Intelligenz</p>', unsafe_allow_html=True)
-    _, c2, _ = st.columns([1.2, 1.6, 1.2])
+    _, c2, _ = st.columns([1.5, 1.0, 1.5])
     with c2:
+        st.markdown('<div class="login-box">', unsafe_allow_html=True)
         u = st.text_input("Benutzername")
         p = st.text_input("Passwort", type="password")
         if st.button("Anmelden", use_container_width=True): check_auth(u, p)
+        st.markdown('</div>', unsafe_allow_html=True)
     st.stop()
 
 # ─────────────── Auto-update map if Excel changed ─────────────────────
