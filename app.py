@@ -134,36 +134,36 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 html, body, [data-testid="stAppViewContainer"] {
-    background-color: #0f172a !important;
-    color: #f8fafc !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
     font-family: 'Outfit', sans-serif !important;
 }
 
 [data-testid="stSidebar"] {
-    background-color: #0f172a !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #f8fafc !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 [data-testid="stSidebar"] .stMarkdown p, [data-testid="stSidebar"] label {
-    color: #cbd5e1 !important;
+    color: #334155 !important;
 }
 
-.main-header { font-size: 34px; font-weight: 700; color: #f8fafc; margin-bottom: 5px; }
-.sub-header { font-size: 15px; color: #94a3b8; margin-bottom: 25px; }
+.main-header { font-size: 34px; font-weight: 700; color: #0f172a; margin-bottom: 5px; }
+.sub-header { font-size: 15px; color: #64748b; margin-bottom: 25px; }
 
 /* KPI Karten */
 .metric-card {
-    background-color: #1e293b; 
+    background-color: #ffffff; 
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     text-align: center;
-    color: #f8fafc !important;
+    color: #0f172a !important;
 }
-.metric-card:hover { transform: translateY(-3px); border-color: #0ea5e9; }
-.metric-value { font-size: 36px; font-weight: 800; color: #f8fafc; }
-.metric-label { font-size: 12px; font-weight: 600; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 5px; }
+.metric-card:hover { transform: translateY(-3px); border-color: #0ea5e9; box-shadow: 0 8px 30px rgba(14, 165, 233, 0.1); }
+.metric-value { font-size: 36px; font-weight: 800; color: #0f172a; }
+.metric-label { font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 5px; }
 .metric-detail { font-size: 10px; color: #94a3b8; margin-top: 3px; }
 
 /* Seitenleiste für Map/List Split */
@@ -171,24 +171,24 @@ html, body, [data-testid="stAppViewContainer"] {
     height: 650px;
     overflow-y: auto;
     padding: 10px;
-    background: #1e293b;
+    background: #f8fafc;
     border-radius: 12px;
-    border: 1px solid #334155;
+    border: 1px solid #e2e8f0;
 }
 .asset-item {
-    background: rgba(30, 41, 59, 0.8);
+    background: #ffffff;
     padding: 12px;
     margin-bottom: 8px;
     border-radius: 8px;
-    border-left: 4px solid #334155;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .stTabs [data-baseweb="tab-list"] { gap: 20px; }
-.stTabs [data-baseweb="tab"] { color: #94a3b8; font-weight: 600; font-size: 14px; }
-.stTabs [aria-selected="true"] { color: #f8fafc !important; border-bottom-color: #0ea5e9 !important; }
+.stTabs [data-baseweb="tab"] { color: #64748b; font-weight: 600; font-size: 14px; }
+.stTabs [aria-selected="true"] { color: #0f172a !important; border-bottom-color: #0ea5e9 !important; }
 
-.bot-msg { background: #1e293b; border: 1px solid rgba(255, 255, 255, 0.05); color: #f8fafc; padding: 12px; border-radius: 12px; margin-bottom: 10px; font-size: 14px; white-space: pre-wrap; }
+.bot-msg { background: #f1f5f9; border: 1px solid #e2e8f0; color: #0f172a; padding: 12px; border-radius: 12px; margin-bottom: 10px; font-size: 14px; white-space: pre-wrap; }
 .user-msg { background: #0ea5e9; border: 1px solid #0ea5e9; color: #ffffff; padding: 12px; border-radius: 12px; margin-bottom: 10px; text-align: right; font-size: 14px; white-space: pre-wrap; }
 
 /* Floating Mic Styling */
@@ -202,11 +202,11 @@ html, body, [data-testid="stAppViewContainer"] {
     border-radius: 50% !important;
     width: 45px !important;
     height: 45px !important;
-    background-color: #1e293b !important;
-    color: #f8fafc !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background-color: #ffffff !important;
+    color: #334155 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .stMicRecorder button:hover {
     background-color: #0ea5e9 !important;
@@ -214,9 +214,9 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 /* Small buttons for Chat/Voice controls */
 .stButton button {
-    background-color: #1e293b !important;
-    color: #f8fafc !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
     font-size: 13px !important;
     padding: 4px 12px !important;
     min-height: 36px !important;
@@ -225,7 +225,7 @@ html, body, [data-testid="stAppViewContainer"] {
 .stButton button:hover {
     border-color: #0ea5e9 !important;
     color: #0ea5e9 !important;
-    background-color: #0f172a !important;
+    background-color: #f8fafc !important;
 }
 .small-btn-container button {
     font-size: 11px !important;
@@ -247,25 +247,25 @@ html, body, [data-testid="stAppViewContainer"] {
         font-family: 'Outfit', sans-serif;
         border-radius: 8px;
         overflow: hidden;
-        border: 1px solid #334155;
+        border: 1px solid #e2e8f0;
     }
     .stChatMessage [data-testid="stMarkdownContainer"] th {
-        background-color: rgba(30, 41, 59, 0.8);
-        color: #f8fafc;
+        background-color: #f1f5f9;
+        color: #0f172a;
         text-align: left;
         padding: 8px 12px;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid #e2e8f0;
     }
     .stChatMessage [data-testid="stMarkdownContainer"] td {
         padding: 6px 12px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        color: #cbd5e1;
+        border-bottom: 1px solid #f1f5f9;
+        color: #334155;
     }
     .stChatMessage [data-testid="stMarkdownContainer"] tr:nth-of-type(even) {
-        background-color: rgba(15, 23, 42, 0.5);
+        background-color: #f8fafc;
     }
     .stChatMessage [data-testid="stMarkdownContainer"] tr:hover {
-        background-color: rgba(14, 165, 233, 0.1);
+        background-color: #f1f5f9;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -471,19 +471,19 @@ div[data-testid="stRadio"] > div { flex-direction: row; gap: 0px; }
 div[data-testid="stRadio"] label {
     padding: 8px 16px;
     border-bottom: 3px solid transparent;
-    color: #94a3b8;
+    color: #64748b;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 0;
     transition: color 0.15s ease;
 }
-div[data-testid="stRadio"] label:hover { color: #f8fafc; }
+div[data-testid="stRadio"] label:hover { color: #0f172a; }
 /* Hide the actual radio circle (the SVG/span Streamlit injects) */
 div[data-testid="stRadio"] label > div:first-child { display: none !important; }
 /* Active tab: dark text + red underline (matching screenshot) */
 div[data-testid="stRadio"] label:has(input:checked) {
-    color: #f8fafc !important;
+    color: #0f172a !important;
     border-bottom: 3px solid #0ea5e9 !important;
 }
 </style>
