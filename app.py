@@ -302,7 +302,7 @@ def check_auth(user, pwd):
 
 # ─────────────── Login ───────────────────────────────────────────────
 if not st.session_state.authenticated:
-    st.markdown('<h1 style="color:#f8fafc; text-align:center; margin-top:100px; white-space: nowrap;">🏢 STADTWERKE X</h1><p style="text-align:center; color:#94a3b8;">Plattform für Infrastruktur-Intelligenz</p>', unsafe_allow_html=True)
+    st.markdown('<h1 style="color:#0f172a; text-align:center; margin-top:100px; white-space: nowrap;">🏢 STADTWERKE X</h1><p style="text-align:center; color:#64748b;">Plattform für Infrastruktur-Intelligenz</p>', unsafe_allow_html=True)
     _, c2, _ = st.columns([1.2, 1.6, 1.2])
     with c2:
         u = st.text_input("Benutzername")
