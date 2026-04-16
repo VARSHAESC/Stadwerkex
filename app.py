@@ -267,6 +267,16 @@ html, body, [data-testid="stAppViewContainer"] {
     .stChatMessage [data-testid="stMarkdownContainer"] tr:hover {
         background-color: #f1f5f9;
     }
+    /* Text Input Styling for better focus/visibility in light mode */
+    div[data-baseweb="input"] {
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        background-color: #ffffff !important;
+    }
+    div[data-baseweb="input"]:focus-within {
+        border-color: #0ea5e9 !important;
+        box-shadow: 0 0 0 1px #0ea5e9 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
