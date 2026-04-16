@@ -10,6 +10,7 @@ import sys
 # Disable TQDM progress bars to prevent OSError 22 with sys.stderr in Streamlit
 os.environ["TQDM_DISABLE"] = "1"
 os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 # Robust workaround: monkeypatch sys.stderr and sys.stdout flush to ignore OSError 22
 if hasattr(sys, 'stderr') and sys.stderr is not None and hasattr(sys.stderr, 'flush'):
