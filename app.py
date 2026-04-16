@@ -188,8 +188,8 @@ html, body, [data-testid="stAppViewContainer"] {
 .stTabs [data-baseweb="tab"] { color: #64748b; font-weight: 600; font-size: 14px; }
 .stTabs [aria-selected="true"] { color: #0f172a !important; border-bottom-color: #0ea5e9 !important; }
 
-.bot-msg { background: #f1f5f9; border: 1px solid #e2e8f0; color: #0f172a; padding: 12px; border-radius: 12px; margin-bottom: 10px; font-size: 14px; white-space: pre-wrap; }
-.user-msg { background: #0ea5e9; border: 1px solid #0ea5e9; color: #ffffff; padding: 12px; border-radius: 12px; margin-bottom: 10px; text-align: right; font-size: 14px; white-space: pre-wrap; }
+.bot-msg { background: #f1f5f9; border: 1px solid #e2e8f0; color: #0f172a; padding: 12px; border-radius: 12px; margin-bottom: 10px; font-size: 14px; }
+.user-msg { background: #0ea5e9; border: 1px solid #0ea5e9; color: #ffffff; padding: 12px; border-radius: 12px; margin-bottom: 10px; text-align: right; font-size: 14px; }
 
 /* Floating Mic Styling */
 .stMicRecorder {
